@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --main-color:#b452f5;
+    --text-color:#000000;
+    font-size: 16px;
+}
+
+section {
+    padding: 50px 10%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 100px;
+    background: #edecea;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+}
+
+.navbar a{
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+span {
+    color: var(--main-color);
+}
+
+.home-text h1{
+    font-size: 3rem;
+}
+
+.home-text p{
+    font-size: 1.2rem;
+    margin: 0.4rem 0 1.8rem;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/dodge.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 14px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 0.3rem;
+    font-size: 14px;
+}
+
+.btn:hover{
+    background: #902fb9;
+    transition: 1s;
+}
+
+.title-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.heading {
+    text-align: center;
+}
+
+.fleet-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.box {
+    position: relative;
+    box-shadow: 1px 4px 4px rgb(0, 0, 0.1);
+    border-radius: 44px 4px 4px 4px;
+    padding-bottom: 10px;
+}
+
+.box .box-img {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 44px 4px 0 0;
+}
+
+.box .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.box .box-img img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.title-price h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.box span {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-left: 12px;
+    color: var(--main-color);
+}
+
+.heading span {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+
+
+
+.about-us-container {
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    display: flex;
+}
+
+.about-us {
+    background: #edecea;
+}
+
+.photo img {
+    width: 140px;
+    height: 140px;
+}
+
+.about-us-text {
+    padding-left: 40px;
+}
+
+.socials i{
+    padding: 0 15px;
+}
+
+.socials a{
+    font-size: 4rem;
+    color: #000000;
+}
+
+.socials h1{
+    text-align: center;
+}
+
+.socials a:hover{
+    color: var(--main-color);
+    transition: 1s;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  footer nav li {
+    margin-right: 1rem;
+  }
+  
+  footer nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .gallery img {
+    width: 33.33%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
